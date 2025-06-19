@@ -1,0 +1,1 @@
+{"version":3,"file":"background-task.d.ts","sourceRoot":"","sources":["../../src/background/background-task.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;GAUG;AACH,qBAAa,cAAc;IACvB,OAAO,CAAC,MAAM,CAAC,CAAS;IAExB;;;;;OAKG;IACI,GAAG,CAAC,CAAC,EAAE,IAAI,EAAE,MAAM,CAAC,GAAG,OAAO,CAAC,CAAC,CAAC;IA0CxC;;OAEG;IACI,eAAe,IAAI,IAAI;CAMjC"}

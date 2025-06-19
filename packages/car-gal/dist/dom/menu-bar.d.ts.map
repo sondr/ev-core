@@ -1,0 +1,1 @@
+{"version":3,"file":"menu-bar.d.ts","sourceRoot":"","sources":["../../src/dom/menu-bar.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AAEpC,qBAAa,OAAO;IAChB,OAAO,CAAC,QAAQ,CAAC,OAAO,CAAY;gBAExB,SAAS,CAAC,EAAE,SAAS;IAOjC,IAAW,OAAO,cAEjB;IAEM,SAAS,CAAC,KAAK,EAAE,OAAO;IAOxB,OAAO;IAId,OAAO,CAAC,cAAc;CA+BzB"}

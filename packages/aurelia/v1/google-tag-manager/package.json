@@ -1,0 +1,65 @@
+{
+  "name": "@ev-core/aurelia-v1-gtm-plugin",
+  "description": "An Aurelia plugin project.",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "aurelia-binding": "^1.0.0 || ^2.0.0",
+    "aurelia-dependency-injection": "^1.0.0",
+    "aurelia-event-aggregator": "^1.0.0",
+    "aurelia-framework": "^1.0.0",
+    "aurelia-logging": "^1.0.0",
+    "aurelia-pal": "^1.0.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "aurelia-cli": "^3.0.4",
+    "aurelia-testing": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint-new": "^2.4.0",
+    "minimatch": "^10.0.1",
+    "promise-polyfill": "^8.3.0",
+    "aurelia-bootstrapper": "^2.4.1",
+    "aurelia-animator-css": "^1.0.4",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "typescript-eslint": "^8.18.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "requirejs": "^2.3.7",
+    "text": "requirejs/text",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "connect": "^3.7.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "connect-injector": "^0.4.4",
+    "serve-static": "^1.16.2",
+    "socket.io": "^4.8.1",
+    "open": "^8.4.2",
+    "server-destroy": "^1.0.1",
+    "debounce": "^2.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-if": "^3.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "au build-plugin --env prod",
+    "start": "au run",
+    "watch": "au build-plugin --watch",
+    "prepare": "npm run build"
+  },
+  "overrides": {
+    "chokidar": "^3.0.0",
+    "glob-stream": "^7.0.0",
+    "glob-parent": "^6.0.0",
+    "micromatch": "^4.0.0"
+  },
+  "main": "dist/commonjs/index.js",
+  "module": "dist/native-modules/index.js",
+  "private": true,
+  "files": [
+    "dist",
+    "src"
+  ]
+}

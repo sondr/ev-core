@@ -1,0 +1,21 @@
+{
+  "name": "@ev-core/main",
+  "version": "0.0.1",
+  "description": "Multiple libraries",
+  "scripts": {
+    "build": "pnpm -r --sort build",
+    "clean": "pnpm -r run clean",
+    "rebuild": "pnpm run clean && pnpm run build",
+    "dev": "pnpm -r run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sondr/ev-core.git"
+  },
+  "author": "",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}

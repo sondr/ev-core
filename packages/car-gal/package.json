@@ -1,0 +1,17 @@
+{
+  "name": "@ev-core/car-gal",
+  "description": "A car gallery plugin for the EV Core framework.",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/css/index.css",
+  "scripts": {
+    "build": "pnpm run build:ts && pnpm run build:scss",
+    "build:ts": "tsc -p tsconfig.json",
+    "build:scss": "sass --no-source-map styles.scss dist/css/index.css",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0"
+  }
+}

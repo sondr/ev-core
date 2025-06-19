@@ -1,0 +1,341 @@
+.hidden {
+  display: none !important;
+}
+
+.cg-fs-container {
+  z-index: 2001;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+.cg-fs-container.fixed .cg-carousel {
+  height: calc(100% - 45px);
+}
+.cg-fs-container.fixed.cg-thumbs-active .cg-carousel {
+  height: calc(100% - (45px + 70px));
+}
+.cg-fs-container.cg-thumbs-active .cg-carousel {
+  height: calc(100% - 70px);
+}
+.cg-fs-container .cg-fs-menubar {
+  z-index: 2002;
+  height: 45px;
+  width: 100%;
+  color: #fff;
+}
+.cg-fs-container .cg-fs-menubar .cg-fs-menubar-indicator {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  font-size: 1.2em;
+  line-height: 45px;
+  margin: 0;
+}
+.cg-fs-container .cg-fs-menubar .cg-fs-menubar-title {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 45px;
+  color: #fff;
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+.cg-fs-container .cg-fs-menubar ul.cg-fs-menubar-btn-group {
+  position: absolute;
+  top: 0.1%;
+  right: 0.1%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.cg-fs-container .cg-fs-menubar ul.cg-fs-menubar-btn-group li.cg-fs-menubar-btn {
+  vertical-align: middle;
+  float: left;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.cg-fs-container .cg-fs-menubar ul.cg-fs-menubar-btn-group li.cg-fs-menubar-btn:hover {
+  opacity: 1;
+}
+
+.cg-container {
+  height: 100%;
+}
+
+.cg-carousel {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+}
+.cg-carousel ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.cg-carousel ul li {
+  height: 100%;
+  width: 100%;
+  display: none;
+  vertical-align: middle;
+}
+.cg-carousel ul li.active {
+  display: inline-block;
+}
+.cg-carousel ul li.active::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+.cg-carousel ul li img {
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+.cg-carousel ul li * {
+  display: inherit;
+}
+.cg-carousel ul li .cg-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cg-carousel .cg-description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+}
+.cg-carousel .cg-btn-container .cg-btn {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: calc(50% - 8px);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+.cg-carousel .cg-btn-container .cg-btn.cg-left {
+  left: 1%;
+}
+.cg-carousel .cg-btn-container .cg-btn.cg-right {
+  right: 1%;
+}
+.cg-carousel .cg-btn-container .cg-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cg-thumbs {
+  display: none;
+}
+.cg-thumbs ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 70px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.cg-thumbs ul li {
+  box-sizing: border-box;
+  height: 100%;
+  display: inline-block;
+  margin: 0px 5px;
+  border: solid transparent 1px;
+}
+.cg-thumbs ul li.active {
+  border: solid #666 1px;
+}
+.cg-thumbs ul li img {
+  max-height: 100%;
+  width: auto;
+}
+.cg-thumbs.active {
+  display: block;
+}
+.cg-thumbs .cg-btn-container {
+  flex: 0 1 auto;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  top: calc(50% - 2em);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20%;
+  z-index: 2;
+  cursor: pointer;
+}
+.cg-thumbs .cg-btn-container.cg-left {
+  left: 0;
+}
+.cg-thumbs .cg-btn-container.cg-right {
+  right: 0;
+}
+.cg-thumbs .cg-btn-container:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body.cg-prevent-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+div.cg-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  z-index: 2000;
+  background: #000;
+  font-size: 15px;
+}
+div.cg-overlay.active {
+  display: block;
+}
+
+.cg-close {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+}
+.cg-close:before, .cg-close:after {
+  background-color: #fff;
+  position: absolute;
+  right: 50%;
+  content: " ";
+  height: 26px;
+  width: 1px;
+}
+.cg-close:before {
+  transform: rotate(45deg);
+}
+.cg-close:after {
+  transform: rotate(-45deg);
+}
+
+.cg-tiles {
+  display: inline-block;
+  color: #fff;
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 -10px 0, -10px -10px 0, 10px -10px 0, 0 0 0 40px inset, -10px 0 0, 10px 0 0, 0 10px 0, -10px 10px 0, 10px 10px 0;
+  margin: 15px 10px;
+}
+.cg-tiles:before, .cg-tiles:after {
+  content: " ";
+}
+.cg-tiles:hover {
+  opacity: 1;
+}
+
+.cg-thumbnails {
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  content: " ";
+  border-bottom: solid #fff 1px;
+}
+
+.cg-chevron {
+  width: 100%;
+  height: 100%;
+}
+.cg-chevron::before, .cg-chevron::after {
+  box-sizing: content-box;
+}
+.cg-chevron:hover {
+  opacity: 1;
+}
+.cg-chevron::before {
+  padding: 5px;
+  border-style: solid;
+  border-width: 4px 4px 0 0;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  color: #fff;
+}
+.cg-chevron.cg-right:before, .cg-chevron.cg-left:before {
+  top: 16px;
+}
+.cg-chevron.cg-right:before {
+  right: 24px;
+  transform: rotate(45deg);
+}
+.cg-chevron.cg-left:before {
+  left: 24px;
+  transform: rotate(-135deg);
+}
+.cg-chevron.cg-bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.cg-hidden {
+  display: none;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.cg-play {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+.cg-play.cg-paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+.cg-play:hover {
+  border-color: transparent transparent transparent #404040;
+}
