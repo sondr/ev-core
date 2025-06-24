@@ -1,3 +1,5 @@
+export * from './interfaces/disposable';
+
 export * as Htmler from './html';
 
 export * from './utils/array';
@@ -11,3 +13,5 @@ export * from './utils/object';
 export * from './utils/slugify';
 export * from './utils/strings';
 export * from './utils/url';
+
+export * from './services/event-listener-service';

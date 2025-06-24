@@ -18,6 +18,475 @@ importers:
         specifier: ^5.0.0
         version: 5.8.3
 
+  packages/aurelia/v1/car-gal:
+    dependencies:
+      '@ev-core/car-gal':
+        specifier: workspace:*
+        version: link:../../../car-gal
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/chartjs:
+    dependencies:
+      '@ev-core/aurelia-v1-resources':
+        specifier: workspace:*
+        version: link:../resources
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      chart.js:
+        specifier: ^4.0.0
+        version: 4.5.0
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/datepicker:
+    dependencies:
+      '@ev-core/core':
+        specifier: workspace:*
+        version: link:../../../core
+      '@types/flatpickr':
+        specifier: ^3.0.0
+        version: 3.1.4
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      flatpickr:
+        specifier: ^4.0.0
+        version: 4.6.13
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/dynamic-input:
+    dependencies:
+      '@ev-core/core':
+        specifier: workspace:*
+        version: link:../../../core
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
   packages/aurelia/v1/fileinput:
     dependencies:
       '@ev-core/core':
@@ -134,6 +603,351 @@ importers:
         version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
 
   packages/aurelia/v1/google-tag-manager:
+    dependencies:
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/icon:
+    dependencies:
+      '@ev-core/core':
+        specifier: workspace:*
+        version: link:../../../core
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/image-cropper:
+    dependencies:
+      '@ev-core/core':
+        specifier: workspace:*
+        version: link:../../../core
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      cropperjs:
+        specifier: ^1.0.0
+        version: 1.6.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/matrix:
     dependencies:
       aurelia-binding:
         specifier: ^1.0.0 || ^2.0.0
@@ -362,6 +1176,118 @@ importers:
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.18.1
+        version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
+
+  packages/aurelia/v1/sheet:
+    dependencies:
+      aurelia-binding:
+        specifier: ^1.0.0 || ^2.0.0
+        version: 2.5.4
+      aurelia-dependency-injection:
+        specifier: ^1.0.0
+        version: 1.6.1
+      aurelia-event-aggregator:
+        specifier: ^1.0.0
+        version: 1.0.3
+      aurelia-framework:
+        specifier: ^1.0.0
+        version: 1.4.1
+      aurelia-logging:
+        specifier: ^1.0.0
+        version: 1.5.2
+      aurelia-pal:
+        specifier: ^1.0.0
+        version: 1.8.2
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.15.32
+      aurelia-animator-css:
+        specifier: ^1.0.4
+        version: 1.0.4
+      aurelia-bootstrapper:
+        specifier: ^2.4.1
+        version: 2.4.1
+      aurelia-cli:
+        specifier: ^3.0.4
+        version: 3.0.4
+      aurelia-testing:
+        specifier: ^1.1.0
+        version: 1.1.0
+      connect:
+        specifier: ^3.7.0
+        version: 3.7.0
+      connect-history-api-fallback:
+        specifier: ^2.0.0
+        version: 2.0.0
+      connect-injector:
+        specifier: ^0.4.4
+        version: 0.4.4
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^9.17.0
+        version: 9.29.0
+      globals:
+        specifier: ^15.14.0
+        version: 15.15.0
+      gulp:
+        specifier: ^4.0.2
+        version: 4.0.2
+      gulp-eslint-new:
+        specifier: ^2.4.0
+        version: 2.4.0
+      gulp-if:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-plumber:
+        specifier: ^1.2.1
+        version: 1.2.1
+      gulp-rename:
+        specifier: ^2.0.0
+        version: 2.0.0
+      gulp-sourcemaps:
+        specifier: ^3.0.0
+        version: 3.0.0
+      gulp-typescript:
+        specifier: ^6.0.0-alpha.1
+        version: 6.0.0-alpha.1(typescript@5.8.3)
+      gulp-watch:
+        specifier: ^5.0.1
+        version: 5.0.1
+      minimatch:
+        specifier: ^10.0.1
+        version: 10.0.3
+      open:
+        specifier: ^8.4.2
+        version: 8.4.2
+      promise-polyfill:
+        specifier: ^8.3.0
+        version: 8.3.0
+      requirejs:
+        specifier: ^2.3.7
+        version: 2.3.7
+      serve-static:
+        specifier: ^1.16.2
+        version: 1.16.2
+      server-destroy:
+        specifier: ^1.0.1
+        version: 1.0.1
+      socket.io:
+        specifier: ^4.8.1
+        version: 4.8.1
+      text:
+        specifier: requirejs/text
+        version: https://codeload.github.com/requirejs/text/tar.gz/3f9d4c19b3a1a3c6f35650c5788cbea1db93197a
       typescript:
         specifier: ^5.7.2
         version: 5.8.3
@@ -684,6 +1610,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@kurkle/color@0.3.4':
+    resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
+
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
 
@@ -795,6 +1724,10 @@ packages:
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
+
+  '@types/flatpickr@3.1.4':
+    resolution: {integrity: sha512-czk8lydTB2qzWBqI6gproY594pg+iEfpHQyrvnyMnMKxvD+2qbrs1g2F8KiWZK173jQMw2C7O9lFjiKeBNub+A==}
+    deprecated: This is a stub types definition. flatpickr provides its own type definitions, so you do not need this installed.
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -1286,6 +2219,10 @@ packages:
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
 
+  chart.js@4.5.0:
+    resolution: {integrity: sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==}
+    engines: {pnpm: '>=8'}
+
   chokidar@2.1.8:
     resolution: {integrity: sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==}
 
@@ -1425,6 +2362,9 @@ packages:
 
   create-hmac@1.1.7:
     resolution: {integrity: sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==}
+
+  cropperjs@1.6.2:
+    resolution: {integrity: sha512-nhymn9GdnV3CqiEHJVai54TULFAE3VshJTXSqSJKa8yXAKyBKDWdhHarnlIPrshJ0WMFTGuFvG02YjLXfPiuOA==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1901,6 +2841,9 @@ packages:
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
+
+  flatpickr@4.6.13:
+    resolution: {integrity: sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==}
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
@@ -4274,6 +5217,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@kurkle/color@0.3.4': {}
+
   '@manypkg/find-root@1.1.0':
     dependencies:
       '@babel/runtime': 7.27.6
@@ -4376,6 +5321,10 @@ snapshots:
     optional: true
 
   '@types/estree@1.0.8': {}
+
+  '@types/flatpickr@3.1.4':
+    dependencies:
+      flatpickr: 4.6.13
 
   '@types/json-schema@7.0.15': {}
 
@@ -5063,6 +6012,10 @@ snapshots:
 
   chardet@0.7.0: {}
 
+  chart.js@4.5.0:
+    dependencies:
+      '@kurkle/color': 0.3.4
+
   chokidar@2.1.8:
     dependencies:
       anymatch: 2.0.0
@@ -5232,6 +6185,8 @@ snapshots:
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
       sha.js: 2.4.11
+
+  cropperjs@1.6.2: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5801,6 +6756,8 @@ snapshots:
     dependencies:
       flatted: 3.3.3
       keyv: 4.5.4
+
+  flatpickr@4.6.13: {}
 
   flatted@3.3.3: {}
 

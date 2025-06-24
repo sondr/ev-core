@@ -1,0 +1,10 @@
+{
+  "extends": "../../../../tsconfig.base.au.v1.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ]
+}
