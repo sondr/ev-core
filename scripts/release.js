@@ -9,6 +9,8 @@ function run(command) {
 }
 
 try {
+  run('pnpm run clean');
+
   // 1. Build all packages
   run('pnpm build');
 
