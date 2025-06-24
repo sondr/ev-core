@@ -7,7 +7,7 @@
     "clean": "pnpm -r run clean",
     "rebuild": "pnpm run clean && pnpm run build",
     "dev": "pnpm -r run dev",
-    "release": "pnpm build && pnpm changeset version && git add . && git commit -m \"chore(release): version packages\" && pnpm changeset publish && pnpm changeset tag && git push --follow-tags"
+    "release": "node scripts/release.js"
   },
   "repository": {
     "type": "git",
