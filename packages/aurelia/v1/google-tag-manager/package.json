@@ -55,11 +55,13 @@
     "glob-parent": "^6.0.0",
     "micromatch": "^4.0.0"
   },
-  "main": "dist/commonjs/index.js",
+  "types": "dist/native-modules/index.d.ts",
   "module": "dist/native-modules/index.js",
-  "private": true,
+  "main": "dist/commonjs/index.js",
   "files": [
-    "dist",
-    "src"
-  ]
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

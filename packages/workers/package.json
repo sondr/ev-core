@@ -1,6 +1,7 @@
 {
   "name": "@ev-core/workers",
   "version": "0.1.0",
+  "description": "Worker library for ev-core",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",
   "main": "dist/cjs/index.js",
@@ -13,10 +14,12 @@
   },
   "scripts": {
     "build": "tsc -b tsconfig.cjs.json tsconfig.esm.json",
-    "clean": "rimraf dist",
-    "dev": "tsc -p tsconfig.json --watch"
+    "clean": "rimraf dist"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

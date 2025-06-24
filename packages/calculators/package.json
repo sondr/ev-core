@@ -15,5 +15,11 @@
     "build": "tsc -b tsconfig.cjs.json tsconfig.esm.json",
     "clean": "rimraf dist",
     "dev": "tsc -p tsconfig.json --watch"
+  },
+   "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
