@@ -1,5 +1,11 @@
 # @ev-core/aurelia-v1-resources
 
+## 0.2.0
+
+### Minor Changes
+
+- Init rest
+
 ## 0.1.0
 
 ### Minor Changes

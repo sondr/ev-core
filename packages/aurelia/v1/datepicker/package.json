@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/aurelia-v1-flatpickr",
   "description": "An Aurelia plugin project.",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "dependencies": {
     "@ev-core/core": "workspace:*",
     "@types/flatpickr": "^3.0.0",

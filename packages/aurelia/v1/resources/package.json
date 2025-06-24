@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/aurelia-v1-resources",
   "description": "value-converters, binding-behaviors, view-hooks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "type": "???",
     "url": "???"
