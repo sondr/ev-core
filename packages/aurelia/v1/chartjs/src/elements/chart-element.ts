@@ -1,7 +1,7 @@
 import { customElement, bindable, inlineView } from 'aurelia-framework';
 import { Chart, ChartType, ChartConfiguration, BubbleDataPoint, ChartData, ChartTypeRegistry, Plugin, Point, ChartOptions, registerables } from 'chart.js';
-import { AuObserver } from '../model-observer';
 import { Timeouter } from '@ev-core/aurelia-v1-resources';
+import { AuObserver } from '../model-observer';
 
 //Chart.register(LineController, DoughnutController)
 Chart.register(...registerables);

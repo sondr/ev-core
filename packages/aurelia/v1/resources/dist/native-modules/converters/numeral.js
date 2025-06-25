@@ -41,19 +41,19 @@ numeral.register('locale', 'se', {
         symbol: 'SEK'
     }
 });
-var numberformatValueConverter = (function () {
-    function numberformatValueConverter() {
+var NumeralValueConverter = (function () {
+    function NumeralValueConverter() {
     }
-    numberformatValueConverter.prototype.toView = function (value, format, locale) {
+    NumeralValueConverter.prototype.toView = function (value, format, locale) {
         if (locale === void 0) { locale = 'nb'; }
         numeral.locale(locale);
         return numeral(value).format(format);
     };
-    numberformatValueConverter = __decorate([
+    NumeralValueConverter = __decorate([
         valueConverter('numeral')
-    ], numberformatValueConverter);
-    return numberformatValueConverter;
+    ], NumeralValueConverter);
+    return NumeralValueConverter;
 }());
-export { numberformatValueConverter };
+export { NumeralValueConverter };
 
 //# sourceMappingURL=numeral.js.map

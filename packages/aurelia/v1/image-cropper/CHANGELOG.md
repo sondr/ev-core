@@ -1,5 +1,16 @@
 # @ev-core/aurelia-v1-image-cropper
 
+## 0.4.0
+
+### Minor Changes
+
+- bugs
+
+### Patch Changes
+
+- Updated dependencies
+  - @ev-core/core@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes

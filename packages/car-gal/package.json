@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/car-gal",
   "description": "A car gallery plugin for the EV Core framework.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",
   "main": "dist/cjs/index.js",

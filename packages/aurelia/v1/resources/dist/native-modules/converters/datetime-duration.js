@@ -24,9 +24,12 @@ var DurationValueConverter = (function () {
         this.toView = DurationValueConverter_1.convert;
     }
     DurationValueConverter_1 = DurationValueConverter;
-    DurationValueConverter.configure = function (opts) {
+    DurationValueConverter.configure = function (cfg) {
         var _a;
-        opts = Object.assign({}, opts !== null && opts !== void 0 ? opts : {});
+        var opts = {};
+        if (cfg) {
+            cfg(opts);
+        }
         DurationValueConverter_1.defaultLocale = (_a = opts === null || opts === void 0 ? void 0 : opts.locale) !== null && _a !== void 0 ? _a : 'en';
         DurationValueConverter_1.opts = opts;
         DurationValueConverter_1.ctrs = {};
@@ -52,7 +55,7 @@ var DurationValueConverter = (function () {
     };
     DurationValueConverter.verifyConfig = function (opts) {
         if (!this.isConfigured) {
-            this.configure(opts);
+            this.configure();
         }
     };
     var DurationValueConverter_1;

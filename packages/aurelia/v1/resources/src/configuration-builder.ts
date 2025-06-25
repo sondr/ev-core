@@ -1,5 +1,5 @@
-import { datetimeConfigure } from 'converters/datetime-config';
-import { DatetimeValueConverter } from 'converters/datetime';
+import { datetimeConfigure } from './converters/datetime-config';
+import { DatetimeValueConverter } from './converters/datetime';
 import { DurationValueConverter, durationConfigure } from './converters/datetime-duration';
 
 

@@ -2,7 +2,7 @@ import { FrameworkConfiguration } from 'aurelia-framework';
 import { PLATFORM } from 'aurelia-pal';;
 import { ResourcesPluginConfiguration } from './configuration-builder';
 
-import { DatetimeValueConverter } from 'converters/datetime';
+import { DatetimeValueConverter } from './converters/datetime';
 import { DurationValueConverter } from './converters/datetime-duration';
 import { FilterValueConverter } from './converters/filter';
 import { JoinValueConverter } from './converters/join';

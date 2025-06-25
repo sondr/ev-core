@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.numberformatValueConverter = void 0;
+exports.NumeralValueConverter = void 0;
 var tslib_1 = require("tslib");
 var aurelia_framework_1 = require("aurelia-framework");
 var numeral = tslib_1.__importStar(require("numeral"));
@@ -44,19 +44,19 @@ numeral.register('locale', 'se', {
         symbol: 'SEK'
     }
 });
-var numberformatValueConverter = (function () {
-    function numberformatValueConverter() {
+var NumeralValueConverter = (function () {
+    function NumeralValueConverter() {
     }
-    numberformatValueConverter.prototype.toView = function (value, format, locale) {
+    NumeralValueConverter.prototype.toView = function (value, format, locale) {
         if (locale === void 0) { locale = 'nb'; }
         numeral.locale(locale);
         return numeral(value).format(format);
     };
-    numberformatValueConverter = tslib_1.__decorate([
+    NumeralValueConverter = tslib_1.__decorate([
         (0, aurelia_framework_1.valueConverter)('numeral')
-    ], numberformatValueConverter);
-    return numberformatValueConverter;
+    ], NumeralValueConverter);
+    return NumeralValueConverter;
 }());
-exports.numberformatValueConverter = numberformatValueConverter;
+exports.NumeralValueConverter = NumeralValueConverter;
 
 //# sourceMappingURL=numeral.js.map
