@@ -6,3 +6,5 @@ export function configure(config: FrameworkConfiguration): void {
     PLATFORM.moduleName('./elements/car-gal-element')
   ]);
 }
+
+export * from './interfaces';

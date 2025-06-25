@@ -5,7 +5,8 @@ const defaultConfig: IDateTimeValueConverterOptions = {
   defaultFormat: 'dd. LL yyyy'
 };
 
-export function configure(cb: (config: IDateTimeValueConverterOptions) => void) {
+export type datetimeConfigure = (config: IDateTimeValueConverterOptions) => void;
+export function configure(cb: datetimeConfigure) {
   cb(defaultConfig);
 }
 

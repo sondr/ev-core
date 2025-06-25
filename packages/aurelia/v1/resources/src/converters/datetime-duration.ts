@@ -25,6 +25,9 @@ const localesModules = [en, nb, sv];
 TimeAgo.addDefaultLocale(localesModules[0]);
 localesModules.forEach(l => TimeAgo.addLocale(l));
 
+export type durationConfigure = (config: IDurationOptions) => void;
+
+
 
 @valueConverter('duration')
 export class DurationValueConverter {
@@ -35,8 +38,13 @@ export class DurationValueConverter {
 
   public toView = DurationValueConverter.convert;
 
-  public static configure(opts?: IDurationOptions) {
-    opts = Object.assign({}, opts ?? {});
+  public static configure(cfg?: durationConfigure) {
+    const opts = {} as IDurationOptions;
+
+    if(cfg){
+      cfg(opts as IDurationOptions);
+    }
+    
     DurationValueConverter.defaultLocale = opts?.locale ?? 'en';
     DurationValueConverter.opts = opts;
 
@@ -64,13 +72,14 @@ export class DurationValueConverter {
 
   private static verifyConfig(opts?: IDurationOptions) {
     if (!this.isConfigured) {
-      this.configure(opts);
+      //this.configure(opts);
+      this.configure();
     }
   }
 }
 
 
-interface IDurationOptions extends FormatOptions {
+export interface IDurationOptions extends FormatOptions {
   locale?: string;
   base?: Date | string;
 }

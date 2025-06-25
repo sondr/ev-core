@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/calculators",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",
   "main": "dist/cjs/index.js",

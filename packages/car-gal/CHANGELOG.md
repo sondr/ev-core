@@ -1,5 +1,11 @@
 # @ev-core/car-gal
 
+## 0.3.0
+
+### Minor Changes
+
+- corrected exports
+
 ## 0.2.0
 
 ### Minor Changes

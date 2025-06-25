@@ -48,7 +48,7 @@ numeral.register('locale', 'se' as NumLocals, {
 
 
 @valueConverter('numeral')
-export class numberformatValueConverter {
+export class NumeralValueConverter {
   toView(value, format, locale: NumLocals = 'nb') {
     numeral.locale(locale);
     return numeral(value).format(format);

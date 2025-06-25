@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/core",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Core library for ev-core",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",
