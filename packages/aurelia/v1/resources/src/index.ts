@@ -40,6 +40,8 @@ export function configure(fc: FrameworkConfiguration, cfg?: (pc: ResourcesPlugin
 }
 
 export {
+  ResourcesPluginConfiguration,
+
   DatetimeValueConverter,
   DurationValueConverter,
   FilterValueConverter,
