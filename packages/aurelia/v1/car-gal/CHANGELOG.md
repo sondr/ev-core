@@ -1,5 +1,13 @@
 # @ev-core/aurelia-v1-cargal
 
+## 0.6.3
+
+### Patch Changes
+
+- build issues
+- Updated dependencies
+  - @ev-core/car-gal@0.6.3
+
 ## 0.6.2
 
 ### Patch Changes

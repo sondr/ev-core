@@ -1,5 +1,11 @@
 # @ev-core/workers
 
+## 0.6.3
+
+### Patch Changes
+
+- build issues
+
 ## 0.6.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/main",
-  "version": "0.6.2",
+  "version": "0.0.0",
   "description": "Multiple libraries",
   "scripts": {
     "build": "pnpm -r --sort build",
