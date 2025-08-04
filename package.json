@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/main",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Multiple libraries",
   "scripts": {
     "build": "pnpm -r --sort build",
@@ -15,8 +15,9 @@
   },
   "author": "",
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
-    "rimraf": "^6.0.0",
-    "typescript": "^5.0.0"
+    "@changesets/cli": "^2.29.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3",
+    "ts2mjs": "^4.0.0"
   }
 }

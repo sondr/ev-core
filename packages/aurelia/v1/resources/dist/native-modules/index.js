@@ -30,7 +30,7 @@ export function configure(fc, cfg) {
         cfg(pc);
     }
 }
-export { DatetimeValueConverter, DurationValueConverter, FilterValueConverter, JoinValueConverter, NumberFormatValueConverter, NumeralValueConverter, RouteHrefValueConverter, SortValueConverter, SumValueConverter, TakeValueConverter, };
+export { ResourcesPluginConfiguration, DatetimeValueConverter, DurationValueConverter, FilterValueConverter, JoinValueConverter, NumberFormatValueConverter, NumeralValueConverter, RouteHrefValueConverter, SortValueConverter, SumValueConverter, TakeValueConverter, };
 export * from './utils/geolocator';
 export * from './utils/media-device';
 export * from './utils/notificator';

@@ -1,5 +1,27 @@
 # @ev-core/aurelia-v1-chartjs-4
 
+## 0.6.0
+
+### Minor Changes
+
+- esm - js to mjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @ev-core/aurelia-v1-resources@0.6.0
+
+## 0.5.0
+
+### Minor Changes
+
+- esm - js converted to mjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @ev-core/aurelia-v1-resources@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes

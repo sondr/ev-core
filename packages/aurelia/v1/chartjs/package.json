@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/aurelia-v1-chartjs",
   "description": "An Aurelia plugin project.",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "dependencies": {
     "@ev-core/aurelia-v1-resources": "workspace:*",
     "chart.js": "^4.0.0"
