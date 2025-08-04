@@ -1,5 +1,11 @@
 # @ev-core/aurelia-v1-matrix
 
+## 0.6.1
+
+### Patch Changes
+
+- build libs outdated
+
 ## 0.6.0
 
 ### Minor Changes

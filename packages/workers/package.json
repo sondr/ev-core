@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/workers",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Worker library for ev-core",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",

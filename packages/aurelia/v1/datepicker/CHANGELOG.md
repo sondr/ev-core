@@ -1,5 +1,13 @@
 # @ev-core/aurelia-v1-flatpickr
 
+## 0.6.1
+
+### Patch Changes
+
+- build libs outdated
+- Updated dependencies
+  - @ev-core/core@0.6.1
+
 ## 0.6.0
 
 ### Minor Changes
