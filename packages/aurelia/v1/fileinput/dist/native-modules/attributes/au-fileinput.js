@@ -1,9 +1,8 @@
-var _a;
 import { __decorate, __metadata } from "tslib";
 import { bindable, customAttribute } from "aurelia-framework";
 import { resolve } from "aurelia-dependency-injection";
 import { DOM } from "aurelia-pal";
-import { FileinputCall, IFileInputOptions } from "@ev-core/core";
+import { FileinputCall } from "@ev-core/core";
 let FileinputAttrComponent = class FileinputAttrComponent {
     constructor() {
         this.el = resolve(DOM.Element);
@@ -22,7 +21,7 @@ let FileinputAttrComponent = class FileinputAttrComponent {
 };
 __decorate([
     bindable,
-    __metadata("design:type", typeof (_a = typeof IFileInputOptions !== "undefined" && IFileInputOptions) === "function" ? _a : Object)
+    __metadata("design:type", Object)
 ], FileinputAttrComponent.prototype, "opts", void 0);
 __decorate([
     bindable,

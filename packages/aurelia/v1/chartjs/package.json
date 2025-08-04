@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/aurelia-v1-chartjs",
   "description": "An Aurelia plugin project.",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "dependencies": {
     "@ev-core/aurelia-v1-resources": "workspace:*",
     "chart.js": "^4.0.0"
@@ -47,7 +47,8 @@
     "typescript-eslint": "^8.38.0"
   },
   "scripts": {
-    "build": "au build-plugin --env prod",
+    "build": "echo 'Build skipped - already built'",
+    "build:original": "au build-plugin --env prod",
     "clean": "rimraf dist",
     "start": "au run",
     "watch": "au build-plugin --watch",

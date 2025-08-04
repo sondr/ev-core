@@ -1,5 +1,4 @@
 "use strict";
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FileinputAttrComponent = void 0;
 const tslib_1 = require("tslib");
@@ -26,7 +25,7 @@ let FileinputAttrComponent = class FileinputAttrComponent {
 exports.FileinputAttrComponent = FileinputAttrComponent;
 tslib_1.__decorate([
     aurelia_framework_1.bindable,
-    tslib_1.__metadata("design:type", typeof (_a = typeof core_1.IFileInputOptions !== "undefined" && core_1.IFileInputOptions) === "function" ? _a : Object)
+    tslib_1.__metadata("design:type", Object)
 ], FileinputAttrComponent.prototype, "opts", void 0);
 tslib_1.__decorate([
     aurelia_framework_1.bindable,

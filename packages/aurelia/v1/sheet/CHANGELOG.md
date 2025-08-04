@@ -1,5 +1,11 @@
 # @ev-core/aurelia-v1-sheet
 
+## 0.6.2
+
+### Patch Changes
+
+- build issues
+
 ## 0.6.1
 
 ### Patch Changes

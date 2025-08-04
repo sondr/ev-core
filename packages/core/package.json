@@ -1,6 +1,6 @@
 {
   "name": "@ev-core/core",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Core library for ev-core",
   "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.mjs",
@@ -16,7 +16,7 @@
     "clean": "rimraf dist && mkdir dist",
     "build": "pnpm run build:cjs && pnpm run build:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:esm": "tsc -p tsconfig.esm.json && ts2mjs dist/esm --remove-source"
+    "build:esm": "tsc -p tsconfig.esm.json && ts2mjs dist/esm"
   },
   "files": [
     "dist"
