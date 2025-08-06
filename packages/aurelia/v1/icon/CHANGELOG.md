@@ -1,5 +1,13 @@
 # @ev-core/aurelia-v1-icon
 
+## 0.6.4
+
+### Patch Changes
+
+- css export missing
+- Updated dependencies
+  - @ev-core/core@0.6.4
+
 ## 0.6.3
 
 ### Patch Changes

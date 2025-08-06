@@ -1,7 +1,7 @@
 {
   "name": "@ev-core/aurelia-v1-sheet",
   "description": "An Aurelia plugin project.",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "peerDependencies": {
     "aurelia-binding": "^1.0.0 || ^2.0.0",
     "aurelia-dependency-injection": "^1.0.0",

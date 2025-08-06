@@ -1,5 +1,13 @@
 # @ev-core/aurelia-v1-cargal
 
+## 0.6.4
+
+### Patch Changes
+
+- css export missing
+- Updated dependencies
+  - @ev-core/car-gal@0.6.4
+
 ## 0.6.3
 
 ### Patch Changes

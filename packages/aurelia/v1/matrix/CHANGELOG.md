@@ -1,5 +1,11 @@
 # @ev-core/aurelia-v1-matrix
 
+## 0.6.4
+
+### Patch Changes
+
+- css export missing
+
 ## 0.6.3
 
 ### Patch Changes
