@@ -1,5 +1,13 @@
 # @ev-core/aurelia-v1-chartjs-4
 
+## 0.6.5
+
+### Patch Changes
+
+- css export build bug
+- Updated dependencies
+  - @ev-core/aurelia-v1-resources@0.6.5
+
 ## 0.6.4
 
 ### Patch Changes
