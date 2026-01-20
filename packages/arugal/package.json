@@ -1,12 +1,26 @@
 {
     "name": "@ev-core/arugal",
-    "version": "0.0.1",
+    "version": "0.6.5",
     "description": "Next generation of CarGal library",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "tsup",
+        "clean": "rimraf dist",
         "dev": "tsup --watch",
         "demo": "pnpm run build && npx http-server . -p 8080 -o /demo",
         "test": "echo \"Error: no test specified\" && exit 1"

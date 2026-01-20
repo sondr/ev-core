@@ -15,9 +15,9 @@
   },
   "author": "",
   "devDependencies": {
-    "@changesets/cli": "^2.29.5",
-    "rimraf": "^6.0.1",
+    "@changesets/cli": "^2.29.8",
+    "rimraf": "^6.1.2",
     "ts2mjs": "^4.0.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   }
 }
