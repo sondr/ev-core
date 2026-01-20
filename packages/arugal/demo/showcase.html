@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arugal - Feature Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #333;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+        h3 {
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p, li {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        ul {
+            margin-left: 2rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #5568d3;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Arugal Feature Showcase</h1>
+        <p>Complete demonstration site for the Arugal image gallery and carousel library.</p>
+
+        <div class="success">
+            <strong>✅ Demo is Ready!</strong><br>
+            The demo server should be running at <strong>http://127.0.0.1:8080/demo</strong>
+        </div>
+
+        <h2>What's Included</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🖼️ Basic Gallery</h3>
+                <p>Default configuration showcasing all core features including inline carousel and lightbox mode.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>▶️ Autoplay</h3>
+                <p>Automatic slideshow that advances every 3 seconds with pause-on-hover functionality.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔗 External Media</h3>
+                <p>Demonstrates collecting images from anywhere on the page using gallery ID references.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📝 Descriptions</h3>
+                <p>Images with both titles and detailed descriptions for rich metadata display.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Performance Test</h3>
+                <p>Large gallery with 12 images to verify smooth operation with more content.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎮 API Testing</h3>
+                <p>Interactive controls to test programmatic gallery manipulation methods.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎨 Custom Theme</h3>
+                <p>Gallery with custom colors demonstrating theming capabilities.</p>
+            </div>
+        </div>
+
+        <h2>Gallery Features</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>Where to Test</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Inline Carousel</strong></td>
+                    <td>Slideshow embedded in page with navigation</td>
+                    <td>All galleries</td>
+                </tr>
+                <tr>
+                    <td><strong>Lightbox</strong></td>
+                    <td>Full-screen image viewer</td>
+                    <td>Click any image</td>
+                </tr>
+                <tr>
+                    <td><strong>Navigation Arrows</strong></td>
+                    <td>Previous/Next controls</td>
+                    <td>Inline and lightbox</td>
+                </tr>
+                <tr>
+                    <td><strong>Pagination Dots</strong></td>
+                    <td>Visual indicators for slides</td>
+                    <td>Below carousel</td>
+                </tr>
+                <tr>
+                    <td><strong>Keyboard Controls</strong></td>
+                    <td>Arrow keys, ESC to close</td>
+                    <td>Lightbox mode</td>
+                </tr>
+                <tr>
+                    <td><strong>Touch Gestures</strong></td>
+                    <td>Swipe left/right on mobile</td>
+                    <td>Mobile devices</td>
+                </tr>
+                <tr>
+                    <td><strong>Autoplay</strong></td>
+                    <td>Automatic slide advancement</td>
+                    <td>Autoplay gallery section</td>
+                </tr>
+                <tr>
+                    <td><strong>Thumbnails</strong></td>
+                    <td>Preview strip navigation</td>
+                    <td>Galleries with thumbnails enabled</td>
+                </tr>
+                <tr>
+                    <td><strong>Theming</strong></td>
+                    <td>Custom colors and styles</td>
+                    <td>Custom theme section</td>
+                </tr>
+                <tr>
+                    <td><strong>Accessibility</strong></td>
+                    <td>ARIA labels, focus management</td>
+                    <td>All galleries</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Testing Instructions</h2>
+
+        <h3>1. Start the Demo</h3>
+        <pre><code>pnpm run demo</code></pre>
+        <p>This will build the library and start a local server at <code>http://127.0.0.1:8080/demo</code></p>
+
+        <h3>2. Basic Navigation Test</h3>
+        <ul>
+            <li>Scroll through the page to see all gallery types</li>
+            <li>Click any image to open the lightbox</li>
+            <li>Use arrow keys (← →) to navigate in lightbox</li>
+            <li>Press ESC or click backdrop to close</li>
+            <li>Try clicking pagination dots</li>
+            <li>Use inline carousel arrows</li>
+        </ul>
+
+        <h3>3. Autoplay Test</h3>
+        <ul>
+            <li>Observe the second gallery advancing automatically</li>
+            <li>Hover your mouse over it - autoplay should pause</li>
+            <li>Move mouse away - autoplay should resume</li>
+        </ul>
+
+        <h3>4. API Test</h3>
+        <ul>
+            <li>Scroll to the "API Testing" section</li>
+            <li>Click each button and observe the status box</li>
+            <li>Try "Destroy Gallery" then "Reinitialize"</li>
+        </ul>
+
+        <h3>5. Mobile Test</h3>
+        <ul>
+            <li>Open DevTools (F12) and toggle device toolbar</li>
+            <li>Select a mobile device preset</li>
+            <li>Try touch gestures (swipe left/right)</li>
+            <li>Verify responsive layout</li>
+        </ul>
+
+        <h2>Keyboard Shortcuts</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Action</th>
+                    <th>Context</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>←</code></td>
+                    <td>Previous image</td>
+                    <td>Lightbox</td>
+                </tr>
+                <tr>
+                    <td><code>→</code></td>
+                    <td>Next image</td>
+                    <td>Lightbox</td>
+                </tr>
+                <tr>
+                    <td><code>Esc</code></td>
+                    <td>Close lightbox</td>
+                    <td>Lightbox</td>
+                </tr>
+                <tr>
+                    <td><code>Tab</code></td>
+                    <td>Navigate focusable elements</td>
+                    <td>Anywhere</td>
+                </tr>
+                <tr>
+                    <td><code>Shift + Tab</code></td>
+                    <td>Navigate backwards</td>
+                    <td>Anywhere</td>
+                </tr>
+                <tr>
+                    <td><code>Enter</code></td>
+                    <td>Activate focused element</td>
+                    <td>Anywhere</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Code Examples</h2>
+
+        <h3>Basic Initialization</h3>
+        <pre><code>import { init } from '@ev-core/arugal';
+
+const manager = init();</code></pre>
+
+        <h3>With Custom Options</h3>
+        <pre><code>import { init } from '@ev-core/arugal';
+
+const manager = init({
+    theme: {
+        primaryColor: '#ff6b6b',
+        backgroundColor: '#ffffff',
+        textColor: '#333333'
+    },
+    inline: {
+        autoplay: {
+            interval: 3000,
+            pauseOnHover: true
+        }
+    }
+});</code></pre>
+
+        <h3>Create Single Gallery</h3>
+        <pre><code>import { create } from '@ev-core/arugal';
+
+const element = document.querySelector('#my-gallery');
+const gallery = create(element, {
+    inline: {
+        enabled: true,
+        navigation: true
+    }
+});</code></pre>
+
+        <h2>Browser Compatibility</h2>
+
+        <p>Arugal is designed to work in all modern browsers:</p>
+        <ul>
+            <li>✅ Chrome/Edge 90+</li>
+            <li>✅ Firefox 88+</li>
+            <li>✅ Safari 14+</li>
+            <li>✅ Opera 76+</li>
+            <li>✅ Mobile browsers (iOS Safari, Chrome Mobile)</li>
+        </ul>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="note">
+            <strong>⚠️ Common Issues</strong>
+            <ul>
+                <li><strong>Images not loading:</strong> Check internet connection (images from picsum.photos)</li>
+                <li><strong>Module not found:</strong> Run <code>pnpm run build</code> first</li>
+                <li><strong>Styles missing:</strong> Hard refresh browser (Ctrl+Shift+R)</li>
+                <li><strong>Server won't start:</strong> Check if port 8080 is already in use</li>
+            </ul>
+        </div>
+
+        <h2>Demo Files</h2>
+
+        <ul>
+            <li><code>demo/index.html</code> - Main demo page with all examples</li>
+            <li><code>demo/styles.css</code> - Custom styling for demo page</li>
+            <li><code>demo/app.js</code> - JavaScript initialization code</li>
+            <li><code>demo/README.md</code> - Demo documentation</li>
+        </ul>
+
+        <h2>Next Steps</h2>
+
+        <ol>
+            <li>Test all features thoroughly using the demo</li>
+            <li>Check browser console for any errors</li>
+            <li>Try on different devices and browsers</li>
+            <li>Verify accessibility with screen readers</li>
+            <li>Customize and extend examples for your needs</li>
+        </ol>
+
+        <div class="success">
+            <strong>✨ Ready to Test!</strong><br>
+            Open <a href="http://127.0.0.1:8080/demo" target="_blank" style="color: #28a745;">http://127.0.0.1:8080/demo</a> to start testing the library.
+        </div>
+
+        <h2>Helpful Commands</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>pnpm run build</code></td>
+                    <td>Build the library</td>
+                </tr>
+                <tr>
+                    <td><code>pnpm run dev</code></td>
+                    <td>Build in watch mode</td>
+                </tr>
+                <tr>
+                    <td><code>pnpm run demo</code></td>
+                    <td>Build and start demo server</td>
+                </tr>
+                <tr>
+                    <td><code>Ctrl + C</code></td>
+                    <td>Stop the server</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 2px solid #eee;">
+
+        <p style="text-align: center; color: #999;">
+            <strong>Arugal</strong> - Next generation image gallery and carousel library<br>
+            Version 0.0.1 | January 2026
+        </p>
+    </div>
+</body>
+</html>

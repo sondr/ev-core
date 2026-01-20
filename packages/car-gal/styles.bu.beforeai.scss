@@ -17,30 +17,23 @@ $fontSize: 16;
 //     position: fixed;
 // }
 .cg-fs-container {
-    // was: height: 100%;
-    height: auto;
-    max-height: 100%;
+    z-index: $zIndex + 1;
+    height: 100%;
     width: 100%;
     margin: auto;
     &.fixed {
         .cg-carousel {
-            // was: height: calc(100% - #{$menubarSize});
-            max-height: calc(100% - #{$menubarSize});
-            height: auto;
+            height: calc(100% - #{$menubarSize});
         }
         &.cg-thumbs-active {
             .cg-carousel {
-                // was: height: calc(100% - (#{$menubarSize} + #{$thumbsSize}));
-                max-height: calc(100% - (#{$menubarSize} + #{$thumbsSize}));
-                height: auto;
+                height: calc(100% - (#{$menubarSize} + #{$thumbsSize}));
             }
         }
     }
     &.cg-thumbs-active {
         .cg-carousel {
-            // was: height: calc(100% - #{$thumbsSize});
-            max-height: calc(100% - #{$thumbsSize});
-            height: auto;
+            height: calc(100% - #{$thumbsSize});
         }
     }
     .cg-fs-menubar {
@@ -90,30 +83,141 @@ $fontSize: 16;
 }
 
 .cg-container {
-    // height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 0; // allow flex children to shrink within parent
+    height: 100%;
 }
+
+.cg-fs-container {}
 
 .cg-carousel {
     position: relative;
     width: 100%;
-    // was: height: calc(100% - #{$thumbsSize});
-    height: auto;
-    max-height: 100%;
+    height: calc(100% - #{$thumbsSize});
     box-sizing: border-box;
-    img {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        height: 100%; // variable
         width: 100%;
-        height: auto;
-        object-fit: contain;
-        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center; // should be variable
+        vertical-align: middle;
+        li {
+            height: 100%;
+            width: 100%;
+            display: none;
+            vertical-align: middle;
+            &.active {
+                display: inline-block;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 100%;
+                    margin-right: -0.25em;
+                    /* Adjusts for spacing */
+                }
+            }
+            img {
+                //display: inline-block;
+                vertical-align: middle;
+                max-height: 100%;
+                max-width: 100%;
+            }
+            * {
+                display: inherit;
+            }
+            .cg-text {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    .cg-description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 10px;
+    }
+    .cg-btn-container {
+        .cg-btn {
+            position: absolute;
+            width: #{$fontSize * 4}px; //width: 100%;
+            height: #{$fontSize * 4}px;
+            top: calc(50% - #{$fontSize * 0.5}px);
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 100%;
+            z-index: 2;
+            cursor: pointer;
+            &.cg-left {
+                left: 1%;
+            }
+            &.cg-right {
+                right: 1%;
+            }
+            &:hover {
+                background: rgba(0, 0, 0, 0.4);
+            }
+        }
     }
 }
 
 .cg-thumbs {
+    display: none;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        height: $thumbsSize; // variable
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center; // should be variable
+        li {
+            box-sizing: border-box;
+            height: 100%;
+            display: inline-block;
+            margin: 0px 5px;
+            border: solid transparent 1px;
+            &.active {
+                border: solid #666 1px; //filter: grayscale(10);
+            }
+            img {
+                max-height: 100%;
+                width: auto;
+            }
+        }
+    }
     &.active {
         display: block;
+    }
+    .cg-btn-container {
+        flex: 0 1 auto;
+        position: relative;
+        width: 4em;
+        height: 4em;
+        display: flex;
+        top: calc(50% - 2em);
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 20%;
+        z-index: 2;
+        cursor: pointer;
+        &.cg-left {
+            left: 0;
+        }
+        &.cg-right {
+            right: 0;
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
     }
 }
 

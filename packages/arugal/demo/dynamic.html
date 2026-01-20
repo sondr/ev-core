@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arugal - Dynamic Loading Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .controls-panel {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .controls-panel h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.25rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+
+        .info-panel {
+            background: #e9ecef;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+
+        .empty-state {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        #gallery-status {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>🚀 Dynamic Loading Demo</h1>
+            <p>Load and manage gallery images programmatically through JavaScript.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="demo-section">
+            <h2>Empty Gallery with Dynamic Content</h2>
+            <p>This gallery starts empty. Use the controls below to add, remove, or replace images.</p>
+
+            <div class="controls-panel">
+                <h3>Gallery Controls</h3>
+
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="btn-add-single">Add Single Image</button>
+                    <button class="btn btn-primary" id="btn-add-multiple">Add 3 Images</button>
+                    <button class="btn btn-success" id="btn-load-nature">Load Nature Set</button>
+                    <button class="btn btn-success" id="btn-load-city">Load City Set</button>
+                    <button class="btn btn-success" id="btn-load-abstract">Load Abstract Set</button>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary" id="btn-remove-first">Remove First</button>
+                    <button class="btn btn-secondary" id="btn-remove-last">Remove Last</button>
+                    <button class="btn btn-danger" id="btn-clear">Clear All</button>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary" id="btn-prev">← Previous</button>
+                    <button class="btn btn-secondary" id="btn-next">Next →</button>
+                    <button class="btn btn-secondary" id="btn-lightbox">Open Lightbox</button>
+                </div>
+
+                <div class="info-panel" id="gallery-status">
+                    Items: 0 | Current Index: 0
+                </div>
+            </div>
+
+            <!-- Empty gallery container - no images in HTML! -->
+            <div class="arugal-container" id="dynamic-gallery" style="height: 450px;">
+                <!-- Gallery starts completely empty -->
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>How It Works</h2>
+            <pre style="background: #f5f5f5; padding: 1.5rem; border-radius: 8px; overflow-x: auto;"><code>// Initialize on an empty container
+const manager = Arugal();
+const gallery = manager.getInstance(document.getElementById('dynamic-gallery'));
+
+// Add images dynamically
+gallery.addItems([
+    { src: 'image1.jpg', title: 'First Image' },
+    { src: 'image2.jpg', title: 'Second Image', description: 'A description' }
+]);
+
+// Replace all images
+gallery.setItems([
+    { src: 'new1.jpg', title: 'New Image 1' },
+    { src: 'new2.jpg', title: 'New Image 2' }
+]);
+
+// Remove specific image
+gallery.removeItem(0);  // Remove first image
+
+// Clear all images
+gallery.clear();
+
+// Navigation
+gallery.next();
+gallery.prev();
+gallery.goTo(2);
+
+// Open lightbox programmatically
+gallery.openLightbox();
+gallery.openLightbox(1);  // Open at specific index</code></pre>
+        </section>
+    </main>
+
+    <script type="module">
+        import { Arugal } from '/dist/index.mjs';
+
+        // Initialize Arugal
+        const manager = Arugal({
+            inline: {
+                autoplay: false,
+                navigation: true,
+                pagination: true
+            }
+        });
+
+        // Get the gallery instance
+        const gallery = manager.getInstance(document.getElementById('dynamic-gallery'));
+
+        // Image counter for unique IDs
+        let imageCounter = 1;
+
+        // Predefined image sets
+        const imageSets = {
+            nature: [
+                { src: 'https://picsum.photos/1200/800?random=n1', title: 'Mountain Vista', description: 'Majestic peaks reaching the clouds' },
+                { src: 'https://picsum.photos/1200/800?random=n2', title: 'Forest Path', description: 'A serene walk through the woods' },
+                { src: 'https://picsum.photos/1200/800?random=n3', title: 'Ocean Sunset', description: 'Golden hour by the sea' },
+                { src: 'https://picsum.photos/1200/800?random=n4', title: 'Flower Meadow', description: 'Spring blooms in full color' }
+            ],
+            city: [
+                { src: 'https://picsum.photos/1200/800?random=c1', title: 'City Skyline', description: 'Urban architecture at its finest' },
+                { src: 'https://picsum.photos/1200/800?random=c2', title: 'Street Scene', description: 'Life in the fast lane' },
+                { src: 'https://picsum.photos/1200/800?random=c3', title: 'Night Lights', description: 'The city that never sleeps' },
+                { src: 'https://picsum.photos/1200/800?random=c4', title: 'Bridge View', description: 'Connecting communities' }
+            ],
+            abstract: [
+                { src: 'https://picsum.photos/1200/800?random=a1', title: 'Color Splash', description: 'Vibrant abstract patterns' },
+                { src: 'https://picsum.photos/1200/800?random=a2', title: 'Geometric', description: 'Shapes and forms' },
+                { src: 'https://picsum.photos/1200/800?random=a3', title: 'Minimalist', description: 'Less is more' },
+                { src: 'https://picsum.photos/1200/800?random=a4', title: 'Texture', description: 'Surface exploration' }
+            ]
+        };
+
+        // Update status display
+        function updateStatus() {
+            const items = gallery.getItems();
+            const currentIndex = gallery.getCurrentIndex();
+            document.getElementById('gallery-status').textContent =
+                `Items: ${items.length} | Current Index: ${currentIndex}`;
+        }
+
+        // Add a single random image
+        function addSingleImage() {
+            gallery.addItems([{
+                src: `https://picsum.photos/1200/800?random=${Date.now()}`,
+                title: `Image ${imageCounter}`,
+                description: `Dynamically added image #${imageCounter}`
+            }]);
+            imageCounter++;
+            updateStatus();
+        }
+
+        // Add multiple images
+        function addMultipleImages() {
+            const newImages = [];
+            for (let i = 0; i < 3; i++) {
+                newImages.push({
+                    src: `https://picsum.photos/1200/800?random=${Date.now() + i}`,
+                    title: `Image ${imageCounter}`,
+                    description: `Dynamically added image #${imageCounter}`
+                });
+                imageCounter++;
+            }
+            gallery.addItems(newImages);
+            updateStatus();
+        }
+
+        // Load a predefined image set
+        function loadImageSet(setName) {
+            const set = imageSets[setName];
+            if (set) {
+                gallery.setItems(set);
+                updateStatus();
+            }
+        }
+
+        // Remove first image
+        function removeFirst() {
+            gallery.removeItem(0);
+            updateStatus();
+        }
+
+        // Remove last image
+        function removeLast() {
+            const items = gallery.getItems();
+            if (items.length > 0) {
+                gallery.removeItem(items.length - 1);
+                updateStatus();
+            }
+        }
+
+        // Clear all images
+        function clearGallery() {
+            gallery.clear();
+            updateStatus();
+        }
+
+        // Navigation
+        function goToPrev() {
+            gallery.prev();
+            updateStatus();
+        }
+
+        function goToNext() {
+            gallery.next();
+            updateStatus();
+        }
+
+        // Open lightbox
+        function openLightbox() {
+            gallery.openLightbox();
+        }
+
+        // Attach event listeners
+        document.getElementById('btn-add-single').addEventListener('click', addSingleImage);
+        document.getElementById('btn-add-multiple').addEventListener('click', addMultipleImages);
+        document.getElementById('btn-load-nature').addEventListener('click', () => loadImageSet('nature'));
+        document.getElementById('btn-load-city').addEventListener('click', () => loadImageSet('city'));
+        document.getElementById('btn-load-abstract').addEventListener('click', () => loadImageSet('abstract'));
+        document.getElementById('btn-remove-first').addEventListener('click', removeFirst);
+        document.getElementById('btn-remove-last').addEventListener('click', removeLast);
+        document.getElementById('btn-clear').addEventListener('click', clearGallery);
+        document.getElementById('btn-prev').addEventListener('click', goToPrev);
+        document.getElementById('btn-next').addEventListener('click', goToNext);
+        document.getElementById('btn-lightbox').addEventListener('click', openLightbox);
+
+        // Initial status update
+        updateStatus();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arugal - Demo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎨 Arugal Demo Gallery</h1>
+            <p>A modern, accessible, and lightweight JavaScript library for creating beautiful inline carousels and lightbox galleries.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="demo-section">
+            <h2>Basic Gallery</h2>
+            <p>A simple carousel with navigation, pagination, and lightbox support.</p>
+            
+            <div class="arugal-container" id="gallery-1" style="height: 450px;">
+                <ul>
+                    <li class="arugal-item">
+                        <img src="https://picsum.photos/2400/1400?random=1" alt="Image 1" data-arugal-title="Beautiful Landscape" data-arugal-description="A stunning view of nature at its finest">
+                    </li>
+                    <li class="arugal-item">
+                        <img src="https://picsum.photos/600/600?random=2" alt="Image 2" data-arugal-title="City Skyline" data-arugal-description="Urban architecture and modern design">
+                    </li>
+                    <li class="arugal-item">
+                        <img src="https://picsum.photos/1400/2400?random=3" alt="Image 3">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
